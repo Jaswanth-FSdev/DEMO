@@ -1,0 +1,250 @@
+/* Opening Hours & Location Section Styles */
+.hours-location-section {
+  background-color: var(--color-bg-subtle);
+  position: relative;
+}
+
+.hours-location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+/* Card Common */
+.info-box-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Opening Hours Card */
+.hours-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hours-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hours-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(217, 119, 6, 0.12);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hours-title-wrap h3 {
+  font-size: 1.4rem;
+  color: var(--color-navy-dark);
+}
+
+.status-badge-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+}
+
+.status-pulsing-dot {
+  width: 8px;
+  height: 8px;
+  background: #10B981;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulseGlow 2s infinite;
+}
+
+.hours-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hours-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.1rem;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border-light);
+}
+
+.hours-row.primary {
+  background: rgba(217, 119, 6, 0.08);
+  border-color: rgba(217, 119, 6, 0.25);
+}
+
+.hours-day {
+  font-weight: 700;
+  color: var(--color-text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hours-time {
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.hours-note {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hours-cta-wrap {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Location Card */
+.location-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.location-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-title-wrap h3 {
+  font-size: 1.4rem;
+  color: var(--color-navy-dark);
+}
+
+.location-meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.location-meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+}
+
+.location-meta-item strong {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--color-navy-dark);
+}
+
+.location-meta-item span {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.location-meta-icon {
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* Interactive Map Visual Box */
+.map-preview-box {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 1.8rem;
+  border: 1px solid var(--color-border);
+  background: #E2E8F0;
+}
+
+.map-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map-pin-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #0A192F;
+  color: #FFFFFF;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(251, 191, 36, 0.4);
+}
+
+.map-pin-icon {
+  color: #EF4444;
+}
+
+.location-cta-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.location-cta-group .btn {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .hours-location-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .info-box-card {
+    padding: 1.5rem;
+  }
+
+  .hours-cta-wrap,
+  .location-cta-group {
+    flex-direction: column;
+  }
+}

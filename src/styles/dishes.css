@@ -1,0 +1,172 @@
+/* Signature Dishes Styles */
+.dishes-section {
+  background-color: #FFFFFF;
+}
+
+.dishes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.8rem;
+}
+
+.dish-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.dish-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(217, 119, 6, 0.3);
+}
+
+/* Image Container */
+.dish-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: var(--color-bg-subtle);
+}
+
+.dish-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.dish-card:hover .dish-img {
+  transform: scale(1.08);
+}
+
+/* Badge on Image */
+.dish-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(10, 25, 47, 0.85);
+  color: #FBBF24;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dish-spice-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #DC2626;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Dish Body */
+.dish-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.dish-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.dish-category {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  letter-spacing: 0.08em;
+}
+
+.dish-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: var(--color-text-main);
+  line-height: 1.3;
+}
+
+.dish-desc {
+  font-size: 0.925rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  margin-bottom: 1.4rem;
+  flex-grow: 1;
+}
+
+/* Dish Footer */
+.dish-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.dish-price {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-navy-dark);
+  font-family: var(--font-sans);
+}
+
+.dish-action-btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  background: var(--color-primary-light);
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all var(--transition-fast);
+}
+
+.dish-action-btn:hover {
+  background: var(--color-primary);
+  color: #FFFFFF;
+}
+
+/* Responsive Grid */
+@media (max-width: 1200px) {
+  .dishes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .dishes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dish-image-wrapper {
+    height: 200px;
+  }
+}

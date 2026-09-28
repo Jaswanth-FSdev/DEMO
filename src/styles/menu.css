@@ -1,0 +1,154 @@
+/* Menu Preview Section Styles */
+.menu-section {
+  background-color: var(--color-bg-light);
+}
+
+/* Category Filter Tabs */
+.menu-tabs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 3rem;
+}
+
+.menu-tab-btn {
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: #FFFFFF;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-fast);
+}
+
+.menu-tab-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.menu-tab-btn.active {
+  background: var(--color-navy-dark);
+  color: #FFFFFF;
+  border-color: var(--color-navy-dark);
+  box-shadow: 0 4px 12px rgba(10, 25, 47, 0.2);
+}
+
+/* Menu Items Grid */
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.menu-item-card {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.menu-item-card:hover {
+  border-color: var(--color-primary-light);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.menu-item-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.menu-item-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.menu-item-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  line-height: 1.3;
+}
+
+/* Veg / Non-Veg Indicator */
+.diet-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid;
+  border-radius: 3px;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.diet-badge.veg {
+  border-color: #16A34A;
+}
+
+.diet-badge.veg .diet-dot {
+  background: #16A34A;
+}
+
+.diet-badge.non-veg {
+  border-color: #DC2626;
+}
+
+.diet-badge.non-veg .diet-dot {
+  background: #DC2626;
+}
+
+.diet-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.menu-item-price {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  white-space: nowrap;
+}
+
+.menu-item-desc {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+}
+
+.menu-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-bottom-cta {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .menu-items-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}

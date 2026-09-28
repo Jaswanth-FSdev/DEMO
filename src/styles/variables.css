@@ -1,0 +1,71 @@
+:root {
+  /* Color Palette - Premium Coastal Culinary */
+  --color-primary: #D97706; /* Rich warm amber/saffron */
+  --color-primary-hover: #B45309;
+  --color-primary-light: #FEF3C7;
+  --color-primary-dark: #92400E;
+  
+  --color-accent: #E05A2B; /* Coastal terracotta */
+  --color-accent-hover: #C2410C;
+  
+  --color-navy-dark: #0A192F; /* Deep ocean luxury */
+  --color-navy-card: #112240;
+  --color-navy-surface: #1E293B;
+  --color-navy-light: #233554;
+  
+  --color-bg-light: #FAF8F5; /* Warm ivory sand */
+  --color-bg-card: #FFFFFF;
+  --color-bg-subtle: #F4EFEA;
+  
+  --color-text-main: #0F172A; /* Slate 900 */
+  --color-text-muted: #475569; /* Slate 600 */
+  --color-text-light: #94A3B8; /* Slate 400 */
+  --color-text-white: #FFFFFF;
+  
+  --color-border: #E2D9CF;
+  --color-border-light: #F1ECE6;
+  --color-border-dark: rgba(255, 255, 255, 0.12);
+  
+  --color-success: #10B981;
+  --color-success-bg: #ECFDF5;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+
+  /* Typography */
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  
+  /* Spacing Scale */
+  --spacing-xs: 0.25rem;  /* 4px */
+  --spacing-sm: 0.5rem;   /* 8px */
+  --spacing-md: 1rem;     /* 16px */
+  --spacing-lg: 1.5rem;   /* 24px */
+  --spacing-xl: 2rem;     /* 32px */
+  --spacing-2xl: 3rem;    /* 48px */
+  --spacing-3xl: 4.5rem;  /* 72px */
+  --spacing-4xl: 6rem;    /* 96px */
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px -1px rgba(15, 23, 42, 0.08), 0 2px 6px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06);
+  --shadow-xl: 0 20px 36px -6px rgba(15, 23, 42, 0.16), 0 8px 16px -4px rgba(15, 23, 42, 0.08);
+  --shadow-glow: 0 0 25px rgba(217, 119, 6, 0.25);
+
+  /* Transitions */
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --container-max-width: 1240px;
+  --container-padding: 1.5rem;
+  --header-height: 80px;
+}

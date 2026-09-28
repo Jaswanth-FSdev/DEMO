@@ -1,0 +1,364 @@
+/* About Section Styles */
+.about-section {
+  position: relative;
+  background-color: var(--color-bg-light);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+  width: 100%;
+}
+
+/* Image Column */
+.about-image-wrapper {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-image-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  width: 100%;
+}
+
+.about-main-img {
+  width: 100%;
+  height: 520px;
+  max-height: 520px;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.about-image-card:hover .about-main-img {
+  transform: scale(1.03);
+}
+
+/* Floating Experience Badge */
+.about-floating-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: #0A192F;
+  color: #FFFFFF;
+  padding: 1.4rem 1.8rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.badge-icon-box {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #D97706, #C2410C);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.badge-text-box strong {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #FBBF24;
+  line-height: 1.1;
+}
+
+.badge-text-box span {
+  font-size: 0.8rem;
+  color: #94A3B8;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Content Column */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-heading {
+  font-size: clamp(2.2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+.about-lead {
+  font-size: 1.18rem;
+  font-weight: 500;
+  color: var(--color-text-main);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  margin-bottom: 2rem;
+  font-size: 1.025rem;
+  line-height: 1.65;
+}
+
+/* 3 Highlights List */
+.about-highlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #FFFFFF;
+  padding: 1.1rem 1.3rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.highlight-item:hover {
+  transform: translateX(6px);
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-md);
+}
+
+.highlight-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(217, 119, 6, 0.12);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.highlight-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.highlight-content h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.highlight-content p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.about-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Tablet: 481px – 991px */
+@media (max-width: 991px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-image-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .about-main-img {
+    height: auto;
+    max-height: 380px;
+    aspect-ratio: 16/9;
+  }
+
+  .about-floating-badge {
+    bottom: -15px;
+    right: 15px;
+    padding: 1rem 1.4rem;
+  }
+}
+
+/* Mobile & Small Tablet: 481px – 768px */
+@media (max-width: 768px) {
+  .about-section {
+    padding-top: clamp(2.5rem, 6vw, 4rem);
+    padding-bottom: clamp(2.5rem, 6vw, 4rem);
+  }
+
+  .about-grid {
+    gap: 2.5rem;
+  }
+
+  .about-heading {
+    font-size: clamp(1.8rem, 4.5vw, 2.4rem);
+    margin-bottom: 1.2rem;
+  }
+
+  .about-lead {
+    font-size: 1.075rem;
+    line-height: 1.6;
+    margin-bottom: 0.85rem;
+  }
+
+  .about-text {
+    font-size: 0.975rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .about-highlights {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Mobile Small & Extra Small: 320px – 480px */
+@media (max-width: 480px) {
+  .about-grid {
+    gap: 2rem;
+  }
+
+  .about-image-wrapper {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-main-img {
+    width: 100%;
+    height: auto;
+    max-height: 270px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+  }
+
+  .about-image-card {
+    border-radius: var(--radius-lg);
+  }
+
+  .about-floating-badge {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    padding: 0.65rem 0.95rem;
+    gap: 0.65rem;
+    border-radius: var(--radius-md);
+    background: rgba(10, 25, 47, 0.92);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .badge-icon-box {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+  }
+
+  .badge-icon-box svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .badge-text-box strong {
+    font-size: 1rem;
+  }
+
+  .badge-text-box span {
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+  }
+
+  .about-heading {
+    font-size: clamp(1.55rem, 5.5vw, 1.85rem);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .about-lead {
+    font-size: 0.975rem;
+    line-height: 1.55;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-highlights {
+    gap: 0.85rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .highlight-item {
+    padding: 0.85rem 1rem;
+    gap: 0.85rem;
+    border-radius: var(--radius-md);
+  }
+
+  .highlight-item:hover {
+    transform: none;
+  }
+
+  .highlight-icon-wrap {
+    width: 36px;
+    height: 36px;
+  }
+
+  .highlight-icon-wrap svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .highlight-content h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .highlight-content p {
+    font-size: 0.825rem;
+    line-height: 1.4;
+  }
+
+  .about-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .about-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
