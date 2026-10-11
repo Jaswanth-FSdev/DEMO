@@ -22,10 +22,10 @@ export const businessData = {
 
   // Contact & Location Details (Clearly Fictional Demo Info)
   contact: {
-    phone: "+91 98765 43210",
-    phoneRaw: "+919876543210",
-    whatsapp: "+91 98765 43210",
-    whatsappNumber: "919876543210", // Used for wa.me link
+    phone: "+91 93908 15778",
+    phoneRaw: "+919390815778",
+    whatsapp: "+91 93908 15778",
+    whatsappNumber: "919390815778", // Used for wa.me link
     whatsappPrefillText: "Hello Coastal Spice! I would like to reserve a table / have an inquiry.",
     email: "reservations@coastalspicedemo.com",
     address: {
