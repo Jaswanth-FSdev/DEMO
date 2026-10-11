@@ -147,9 +147,11 @@ export default function Footer({ onOpenReservation }) {
         {/* Footer Bottom Line */}
         <div className="footer-bottom">
           <div>
-            Restaurant Website Demo designed by Jaswanth.<br/>
-            Available for restaurant and local-business websites in Visakhapatnam.<br/>
-            WhatsApp: +91 93908 15778 | Email: jaswanth0782@gmail.com
+            Restaurant Website Demo designed by Jaswanth.<br />
+            Available for restaurant and local-business websites in Visakhapatnam.<br />
+            WhatsApp: +91 93908 15778 | Email: jaswanth0782@gmail.com<br /><br />
+            Portfolio demonstration only. Coastal Spice, menu items, prices,
+            reviews, contact details, and location are sample content.
           </div>
           <div className="footer-bottom-links">
             <a href="#home">Back to Top ↑</a>
